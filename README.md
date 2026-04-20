@@ -1,1 +1,62 @@
-# Fun
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You ❤️</title>
+    <style>
+        body { margin: 0; padding: 0; height: 100vh; background: linear-gradient(135deg, #ff9a9e, #fad0c4); display: flex; justify-content: center; align-items: center; font-family: 'Segoe UI', sans-serif; overflow: hidden; }
+        .card { background: white; padding: 40px; border-radius: 20px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2); max-width: 320px; width: 85%; z-index: 10; }
+        h1 { color: #e60073; font-size: 26px; }
+        img { width: 100%; border-radius: 15px; margin-top: 15px; }
+        button { border: none; padding: 12px 25px; margin: 8px; font-size: 16px; border-radius: 25px; cursor: pointer; font-weight: bold; width: 200px; transition: 0.3s; }
+        #yes { background: #ff4d88; color: white; }
+        #no { background: #ccc; } /* Fixed ID to lowercase */
+        .heart { position: fixed; bottom: -20px; font-size: 20px; animation: float 5s linear infinite; color: #ff3366; pointer-events: none; z-index: 1; }
+        @keyframes float { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; } }
+    </style>
+</head>
+<body>
+
+<div class="card" id="mainCard">
+    <h1>Hey guys want to see something? 🤔🤗</h1>
+    <p>cool then lets jump into below option.</p>
+    <div class="buttons">
+        <button id="yes" onclick="handleResponse('Yes')">Yes 😃</button>
+        <button id="no" onclick="handleResponse('No')">No, No 😩</button>
+    </div>
+</div>
+
+<script>
+    const mainCard = document.getElementById("mainCard");
+
+    // Paste your image URLs here
+    const yesImageUrl = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61O9VV-LZuL._AC_UF894%2C1000_QL80_.jpg&tbnid=sRHYupI_gK16OM&vet=1&imgrefurl=https%3A%2F%2Fwww.amazon.in%2FMonkey-Funny-Poster-Unframed-Multicolor%2Fdp%2FB0CWYS1H9W&docid=bQ5oFBQUo9Cz3M&w=667&h=1000&hl=en-in&source=sh%2Fx%2Fim%2Fm4%2F0&kgs=7fb472fe89b3950f";
+    const noImageUrl = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3c9QF8blViI%2Fhq720.jpg%3Fsqp%3D-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD%26rs%3DAOn4CLC3r1WQst-YMTconKDYxrMFB_-4Ug&tbnid=_twKVnsEoaYvKM&vet=1&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3c9QF8blViI&docid=Ng84qD9WYHhQiM&w=686&h=386&hl=en-in&source=sh%2Fx%2Fim%2Fm4%2F0&kgs=e5c4cc235955584c";
+    
+    //function handleResponse(type) {
+        // 1. Update UI
+        //if (type === 'Yes') {
+            //mainCard.innerHTML = `<h1>Yay! 🥰❤️</h1><p>You've made me the happiest person!</p><img src="${yesImageUrl}" alt="Yes Image">`;
+        //} else {
+            //mainCard.innerHTML = `<h1>Forever & Always! ♾️❤️</h1><p>I promise to love you always!</p><img src="${noImageUrl}" alt="No Image">`;
+            //document.body.style.background = "linear-gradient(135deg, #ff0055, #ff9a9e)";
+    //    }
+
+        // 2. Send Data
+     //   fetch("https://formsubmit.co/ajax/dhineshdasaraju910@gmail.com", {
+            //method: "POST",
+            //headers: {'Content-Type': 'application/json'},
+            //body: JSON.stringify({ message: `Kusuma said: ${type}!` })
+        //})
+      //  .then(response => console.log("Email sent successfully"))
+      //  .catch(error => console.error("Error sending email:", error));
+
+        // 3. Optional: Auto-refresh
+        setTimeout(() => {
+            window.location.reload();
+        }, 10000);
+    //}
+</script>
+</body>
+</html>
