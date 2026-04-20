@@ -35,13 +35,13 @@
     const noImageUrl = "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3c9QF8blViI%2Fhq720.jpg%3Fsqp%3D-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD%26rs%3DAOn4CLC3r1WQst-YMTconKDYxrMFB_-4Ug&tbnid=_twKVnsEoaYvKM&vet=1&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3c9QF8blViI&docid=Ng84qD9WYHhQiM&w=686&h=386&hl=en-in&source=sh%2Fx%2Fim%2Fm4%2F0&kgs=e5c4cc235955584c";
     
     //function handleResponse(type) {
-        // 1. Update UI
-        //if (type === 'Yes') {
+        1. Update UI
+    if (type === 'Yes') {
             //mainCard.innerHTML = `<h1>Yay! 🥰❤️</h1><p>You've made me the happiest person!</p><img src="${yesImageUrl}" alt="Yes Image">`;
-        //} else {
-            //mainCard.innerHTML = `<h1>Forever & Always! ♾️❤️</h1><p>I promise to love you always!</p><img src="${noImageUrl}" alt="No Image">`;
-            //document.body.style.background = "linear-gradient(135deg, #ff0055, #ff9a9e)";
-    //    }
+        } else {
+            mainCard.innerHTML = `<h1>Forever & Always! ♾️❤️</h1><p>I promise to love you always!</p><img src="${noImageUrl}" alt="No Image">`;
+            document.body.style.background = "linear-gradient(135deg, #ff0055, #ff9a9e)";
+  }
 
         // 2. Send Data
      //   fetch("https://formsubmit.co/ajax/dhineshdasaraju910@gmail.com", {
@@ -52,11 +52,11 @@
       //  .then(response => console.log("Email sent successfully"))
       //  .catch(error => console.error("Error sending email:", error));
 
-        // 3. Optional: Auto-refresh
+        3. Optional: Auto-refresh
         setTimeout(() => {
             window.location.reload();
         }, 10000);
-    //}
+   // }
 </script>
 </body>
 </html>
